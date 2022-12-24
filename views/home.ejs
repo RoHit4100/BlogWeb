@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+    <div class="container-fluid">
+        <h1>Home
+        </h1>
+        <p>
+            <%= content %>
+        </p>
+
+
+
+        <% for(var i=0; i< post.length; i++){ %>
+            <h2>
+                <%= post[i].title %>
+            </h2>
+            <p>
+                <%= post[i].postContent %>
+            </p>
+
+            <% } %>
+
+    </div>
+    <%- include("partials/footer.ejs") %>

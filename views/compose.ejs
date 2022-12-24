@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+    <div class="container-fluid">
+        <h1>Compose
+        </h1>
+        <form action="/compose" method="post">
+            <div class="form-group">
+                <label for="exampleFormControlInput1" class="labels">Title</label>
+                <input type="text" class="form-control" name="postTitle" placeholder="Enter Your Title Here">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="labels">Post</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="postArea" rows="3"></textarea>
+                <button type="submit" class="btn btn-md btn-primary mt-2" name="button" value="submit">Publish</button>
+            </div>
+        </form>
+    </div>
+    <%- include("partials/footer.ejs") %>
