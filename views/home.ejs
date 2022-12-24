@@ -8,15 +8,16 @@
 
 
 
-        <% for(var i=0; i< post.length; i++){ %>
+        <% post.forEach(function(i){ %>
             <h2>
-                <%= post[i].title %>
+                <%= i.title %>
             </h2>
             <p>
-                <%= post[i].postContent %>
+                <%= (i.postContent).substring(0, 100) +"....." %> <a href="/posts/<%= i.title %>">read
+                        more</a>
             </p>
 
-            <% } %>
+            <% }) %>
 
     </div>
     <%- include("partials/footer.ejs") %>
