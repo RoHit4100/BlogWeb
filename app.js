@@ -60,7 +60,6 @@ app.get("/posts/:postId", function (req, res) {
     postId = postId.trim();
     Post.findOne({ _id: postId }, function (err, foundPost) {
         if (!err) {
-            console.log(foundPost);
             res.render("post.ejs", { title: foundPost.title, postContent: foundPost.content });
         };
     });
