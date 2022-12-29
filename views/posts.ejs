@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="container-fluid" style="text-align: center;">
+        <% posts.forEach(post=> { %>
+            <h2>
+                <%= post.title %>
+            </h2>
+            <p style="text-align: left;">
+                <%= post.content %>
+            </p>
+            <% }); %>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
