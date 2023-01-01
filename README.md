@@ -1,9 +1,8 @@
 
 # Personal-Blog-Website
 
-This is my persnal blog web app which is I have develop with the help of npm modules, like express, ejs, body-parser.
-This project is yet to complete, because I have didnt add any database for this web.
-I am currently learning Mongoose v6.8.1, I will complete my project till tomorrow.
+- This is my persnal blog web app which is I have develop with the help of npm modules, like express, ejs, body-parser.
+- This project is now complete, And I have used the mongoDb database for the database.
 
 ## Badges
 
